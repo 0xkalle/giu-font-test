@@ -28,6 +28,7 @@ func loop() {
 
 func main() {
 	wnd := g.NewMasterWindow("Font test", 600, 400, 0)
+	//wnd.SetPos(-3000, 100)
 	datafont_16 = g.Context.FontAtlas.AddFont("robotomono-m.ttf", 16)
 	datafont_24 = g.Context.FontAtlas.AddFont("robotomono-m.ttf", 24)
 	datafont_32 = g.Context.FontAtlas.AddFont("robotomono-m.ttf", 32)
@@ -35,6 +36,5 @@ func main() {
 	datafont_64 = g.Context.FontAtlas.AddFont("robotomono-m.ttf", 64)
 	datafont_72 = g.Context.FontAtlas.AddFont("robotomono-m.ttf", 72)
 	datafont_96 = g.Context.FontAtlas.AddFont("robotomono-m.ttf", 96)
-
 	wnd.Run(loop)
 }
